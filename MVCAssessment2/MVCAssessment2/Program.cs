@@ -1,9 +1,28 @@
+using MVCAssessment2.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configuration Root
+IConfigurationRoot configuration; //normal variable
+configuration = new ConfigurationBuilder().AddJsonFile("./config.json").Build();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Add the connection string
+builder.Services.AddDbContext<CSIROContext>(options =>
+{
+    var connectionString = configuration.GetConnectionString("DBConnection");
+    options.UseSqlServer(connectionString);
+});
+
+// Create a user
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<CSIROContext>()
+    .AddDefaultTokenProviders();
 
 var app = builder.Build();
 
@@ -19,6 +38,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
