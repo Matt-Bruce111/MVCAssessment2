@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityRole>
+
+<table class="table table-striped table-dark">
+    <tr><th>@Html.DisplayNameFor(m => m.Id)</th><th>@Html.DisplayNameFor(m => m.Name)</th></tr>
+
+    @foreach (var v in Model)
+    {
+        <tr><td>@v.Id</td><td>@v.Name</td><td>@Html.ActionLink("Delete", "Delete", new{@roleId= v.Id})</td></tr>
+    }
+
+</table>
