@@ -13,8 +13,8 @@ configuration = new ConfigurationBuilder().AddJsonFile("./config.json").Build();
 builder.Services.AddControllersWithViews();
 
 // Add the connection string
-builder.Services.AddDbContext<CSIROContext>(options =>
-//builder.Services.AddDbContext<ApplicantDataContext>(options =>
+//builder.Services.AddDbContext<CSIROContext>(options =>
+builder.Services.AddDbContext<ApplicantDataContext>(options =>
 {
     var connectionString = configuration.GetConnectionString("DBConnection");
     options.UseSqlServer(connectionString);
@@ -22,8 +22,8 @@ builder.Services.AddDbContext<CSIROContext>(options =>
 
 // Create a user
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-    .AddEntityFrameworkStores<CSIROContext>()
-    //.AddEntityFrameworkStores<ApplicantDataContext>()
+    //.AddEntityFrameworkStores<CSIROContext>()
+    .AddEntityFrameworkStores<ApplicantDataContext>()
     .AddDefaultTokenProviders();
 
 //APIs for registering session management
