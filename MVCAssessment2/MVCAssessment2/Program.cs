@@ -65,5 +65,3 @@ app.MapControllerRoute(
     //pattern: "{controller=Admin}/{action=ManageRole}/{id?}");
 
 app.Run();
-
-// Package test
