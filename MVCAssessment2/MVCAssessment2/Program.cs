@@ -13,7 +13,8 @@ configuration = new ConfigurationBuilder().AddJsonFile("./config.json").Build();
 builder.Services.AddControllersWithViews();
 
 // Add the connection string
-builder.Services.AddDbContext<CSIROContext>(options =>
+//builder.Services.AddDbContext<CSIROContext>(options =>
+builder.Services.AddDbContext<ApplicantDataContext>(options =>
 {
     var connectionString = configuration.GetConnectionString("DBConnection");
     options.UseSqlServer(connectionString);
@@ -21,8 +22,13 @@ builder.Services.AddDbContext<CSIROContext>(options =>
 
 // Create a user
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-    .AddEntityFrameworkStores<CSIROContext>()
+    //.AddEntityFrameworkStores<CSIROContext>()
+    .AddEntityFrameworkStores<ApplicantDataContext>()
     .AddDefaultTokenProviders();
+
+//APIs for registering session management
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -33,20 +39,29 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+{
+    app.UseDeveloperExceptionPage();
+}
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
+
+app.UseSession();
 
 app.UseRouting();
 
 app.UseAuthentication();
 
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    //pattern: "{controller=Home}/{action=Index}/{id?}");
+    //pattern: "{controller=Applicant}/{action=Display}/{id?}");
+    pattern: "{controller=Account}/{action=Register}/{id?}");
+    //pattern: "{controller=Account}/{action=Login}/{id?}");
+    //pattern: "{controller=Admin}/{action=CreateRole}/{id?}");
+    //pattern: "{controller=Admin}/{action=ManageRole}/{id?}");
 
 app.Run();
-
-// Package test

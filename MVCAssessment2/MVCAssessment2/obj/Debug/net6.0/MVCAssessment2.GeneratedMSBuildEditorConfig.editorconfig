@@ -16,6 +16,46 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Matt\Desktop\School\Diploma\Implement a MVC\Assessment 2\MVCAssessment2\MVCAssessment2\MVCAssessment2
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Matt/Desktop/School/Diploma/Implement a MVC/Assessment 2/MVCAssessment2/MVCAssessment2/MVCAssessment2/Views/Account/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Matt/Desktop/School/Diploma/Implement a MVC/Assessment 2/MVCAssessment2/MVCAssessment2/MVCAssessment2/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Matt/Desktop/School/Diploma/Implement a MVC/Assessment 2/MVCAssessment2/MVCAssessment2/MVCAssessment2/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Matt/Desktop/School/Diploma/Implement a MVC/Assessment 2/MVCAssessment2/MVCAssessment2/MVCAssessment2/Views/Admin/CreateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Matt/Desktop/School/Diploma/Implement a MVC/Assessment 2/MVCAssessment2/MVCAssessment2/MVCAssessment2/Views/Admin/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGlzcGxheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Matt/Desktop/School/Diploma/Implement a MVC/Assessment 2/MVCAssessment2/MVCAssessment2/MVCAssessment2/Views/Admin/ManageRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Matt/Desktop/School/Diploma/Implement a MVC/Assessment 2/MVCAssessment2/MVCAssessment2/MVCAssessment2/Views/Applicant/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYW50XEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Matt/Desktop/School/Diploma/Implement a MVC/Assessment 2/MVCAssessment2/MVCAssessment2/MVCAssessment2/Views/Applicant/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYW50XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Matt/Desktop/School/Diploma/Implement a MVC/Assessment 2/MVCAssessment2/MVCAssessment2/MVCAssessment2/Views/Applicant/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYW50XERpc3BsYXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Matt/Desktop/School/Diploma/Implement a MVC/Assessment 2/MVCAssessment2/MVCAssessment2/MVCAssessment2/Views/Applicant/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Matt/Desktop/School/Diploma/Implement a MVC/Assessment 2/MVCAssessment2/MVCAssessment2/MVCAssessment2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

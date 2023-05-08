@@ -1,0 +1,36 @@
+﻿@model MVCAssessment2.ViewModels.RegisterViewModel
+
+<div class="row">
+
+    <div class="col-md-8">
+
+        <form method="post">
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="form-control">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" id="id1" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger" />
+            </div>
+
+            <div class="form-control">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" id="id1" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger" />
+            </div>
+
+            <div class="form-control">
+                <label asp-for="ConfirmPassword"></label>
+                <input asp-for="ConfirmPassword" id="id1" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Register</button>
+
+        </form>
+
+    </div>
+
+</div>
+
