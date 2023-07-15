@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\MVCAssessment2.props" />
-</Project>
